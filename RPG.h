@@ -12,9 +12,11 @@ typedef struct{
     int exp;
     int stageCount;
     int stageClear;
-    ATACKSKILL atackskill;
-    HEALSKILL healskill;
-    ITEM item;
+    int criticalRatio;
+    double criticalPoint;
+    ATACKSKILL attackskill[10];
+    HEALSKILL healskill[10];
+    ITEM item[100];
 }PLAYER;
 
 typedef struct {
@@ -43,3 +45,11 @@ typedef struct {
     char skillname [20];
     int gainexp;
 }MONSTER;
+
+
+//プレイヤー構造体変数の宣言
+PLAYER player;
+
+//関数のプロトタイプ宣言
+
+void parameterset(PLAYER *p);
