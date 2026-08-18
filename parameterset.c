@@ -56,10 +56,12 @@ void parameterset(PLAYER *p)
         p -> attackskill[1].powerpoint = 210;
 
         //回復スキル
-        strcpy(p -> healskill[0].name, "ラムル");
+        strcpy(p -> healskill[0].name, "ウォッシュ");
         p -> healskill[0].reqmp = 30;
         p -> healskill[0].powerpoint = 180;
-    };
+
+        break;
+    }
 
 
 
