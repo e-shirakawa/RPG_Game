@@ -4,7 +4,8 @@
 //====================================
 //キャラクターのパラメーター構造体
 //====================================
-typedef struct{
+typedef struct
+{
     //基礎パラメーター
     char name [20];                 //名前
     int hp;                         //HP
@@ -20,6 +21,8 @@ typedef struct{
     int stageClear;                 //クリアしたステージ数
     double criticalRatio;           //通常攻撃でクリティカルヒットする確率
     double criticalPoint;           //通常攻撃でクリティカルヒットした時のダメージ倍率
+    double hitratio;                //攻撃成功倍率
+    double evasionratio;            //攻撃回避倍率
 
     //攻撃スキル
     SKILL playerskill[10];     //覚えた攻撃スキルを格納
@@ -35,7 +38,8 @@ typedef struct{
 //=================
 //スキル構造体
 //=================
-typedef struct {
+typedef struct 
+{
     char name [20];                 //スキル名
     int reqmp;                      //必要MP
     int powerpoint;                 //攻撃力、回復量
@@ -46,17 +50,20 @@ typedef struct {
 //====================
 //アイテム構造体
 //====================
-typedef struct {
+typedef struct
+{
     char name [20];                 //アイテム名
     int powerpoint;                 //攻撃力 / 回復量
     int count;                      //所持数
+    int type;                       //アイテムタイプ（1 = 攻撃系 / 2 = HP回復系 / 3 = MP回復系）
 }ITEM;
 
 
 //==============================
 //モンスターパラメーター構造体
 //==============================
-typedef struct {
+typedef struct
+{
     char name [20];
     int power;
     int defence;

@@ -45,6 +45,11 @@ void parameterset(PLAYER *p)
         p -> stageClear = 0;
         p -> criticalRatio = 0.065;
         p -> criticalPoint = 1.4;
+        p -> hitratio = 0.865;
+        p -> evasionratio = 0.065;
+
+
+        p->skillCount = 0;
 
         //スキル1
         strcpy(p -> playerskill[0].name, "閃光突き");
@@ -90,6 +95,11 @@ void parameterset(PLAYER *p)
         p -> stageClear = 0;
         p -> criticalRatio = 0.045;
         p -> criticalPoint = 1.75;
+        p -> hitratio = 0.825;
+        p -> evasionratio = 0.035;
+
+
+        p->skillCount = 0;
 
         //スキル1
         strcpy(p -> playerskill[0].name, "強撃");
@@ -128,6 +138,11 @@ void parameterset(PLAYER *p)
         p -> stageClear = 0;
         p -> criticalRatio = 0.070;
         p -> criticalPoint = 1.6;
+        p -> hitratio = 0.895;
+        p -> evasionratio = 0.058;
+
+
+        p->skillCount = 0;
 
         //スキル1
         strcpy(p -> playerskill[0].name, "爆裂");
@@ -174,6 +189,11 @@ void parameterset(PLAYER *p)
         p -> stageClear = 0;
         p -> criticalRatio = 0.063;
         p -> criticalPoint = 1.3;
+        p -> hitratio = 0.875;
+        p -> evasionratio = 0.072;
+
+
+        p->skillCount = 0;
 
         //スキル1
         strcpy(p -> playerskill[0].name, "ウェポンスロー");
@@ -227,6 +247,11 @@ void parameterset(PLAYER *p)
         p -> stageClear = 0;
         p -> criticalRatio = 0.115;
         p -> criticalPoint = 2.8;
+        p -> hitratio = 0.855;
+        p -> evasionratio = 0.096;
+
+
+        p->skillCount = 0;
 
         //スキル1
         strcpy(p -> playerskill[0].name, "クナイ");
@@ -240,15 +265,15 @@ void parameterset(PLAYER *p)
         strcpy(p -> playerskill[1].name, "ボム");
         p -> playerskill[1].reqmp = 17;
         p -> playerskill[1].powerpoint = 195;
-        p -> playerskill[0].type = 1;
+        p -> playerskill[1].type = 1;
 
         p -> skillCount++;
 
         //スキル3
-        strcpy(p -> playerskill[0].name, "丸薬");
-        p -> playerskill[0].reqmp = 14;
-        p -> playerskill[0].powerpoint = 186;
-        p -> playerskill[0].type = 3;
+        strcpy(p -> playerskill[2].name, "丸薬");
+        p -> playerskill[2].reqmp = 14;
+        p -> playerskill[2].powerpoint = 186;
+        p -> playerskill[2].type = 3;
 
         p -> skillCount++;
 
