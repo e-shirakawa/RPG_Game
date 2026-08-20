@@ -6,7 +6,7 @@
 //====================================
 typedef struct
 {
-    //基礎パラメーター
+    //基礎パラメーター関係
     char name [20];                 //名前
     int hp;                         //HP
     int mp;                         //MP
@@ -15,10 +15,16 @@ typedef struct
     double magicaldefence;          //魔法防御力（敵の魔法攻撃力×魔法防御力（低いほど防御力が高い））
     int maxHp;                      //最大HP（レベルアップで上昇）
     int maxMp;                      //最大MP（レベルアップで上昇）
+
+    //レベル関係
     int level;                      //レベル
     int exp;                        //経験値
+
+    //ステージ関係
     int stageCount;                 //現在のステージ
     int stageClear;                 //クリアしたステージ数
+
+    //確率関係
     double criticalRatio;           //通常攻撃でクリティカルヒットする確率
     double criticalPoint;           //通常攻撃でクリティカルヒットした時のダメージ倍率
     double hitratio;                //攻撃成功倍率
