@@ -2,10 +2,10 @@
 #include<string.h>
 #include"head_rpg.h"
 
-
-void save()
+void useskill(PLAYER *p)
 {
-    printf("セーブ処理（未実装）\n\n");
+    skilldisplay(p);
+
 
     return;
 }

@@ -3,7 +3,7 @@
 #include"head_rpg.h"
 
 
-void SkillSet(SKILL skills[])
+void skillSet(SKILL skills[])
 {
 
 //======================================
@@ -30,7 +30,7 @@ void SkillSet(SKILL skills[])
     skills[3].powerpoint = 180;
     skills[3].type = 1;
 
-    rcpy(skills[4].name, "突風突き");
+    strcpy(skills[4].name, "突風突き");
     skills[4].reqmp = 18;
     skills[4].powerpoint = 200;
     skills[4].type = 1;

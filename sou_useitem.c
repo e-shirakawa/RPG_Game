@@ -2,7 +2,7 @@
 #include<string.h>
 #include"head_rpg.h"
 
-void levelup()
+void useitem(PLAYER *p)
 {
-    
+
 }

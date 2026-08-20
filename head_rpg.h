@@ -1,6 +1,32 @@
 //キャラクターのパラメーターの構造体を作成
 
 
+//=================
+//スキル構造体
+//=================
+typedef struct 
+{
+    char name [20];                 //スキル名
+    int reqmp;                      //必要MP
+    int powerpoint;                 //攻撃力、回復量
+    int type;                       //スキルタイプ（1 = 物理攻撃系 / 2 = 魔法攻撃系 / 3 = 回復魔法系）
+}SKILL;
+
+
+
+//====================
+//アイテム構造体
+//====================
+typedef struct
+{
+    char name [20];                 //アイテム名
+    int powerpoint;                 //攻撃力 / 回復量
+    int count;                      //所持数
+    int type;                       //アイテムタイプ（1 = 攻撃系 / 2 = HP回復系 / 3 = MP回復系）
+}ITEM;
+
+
+
 //====================================
 //キャラクターのパラメーター構造体
 //====================================
@@ -31,8 +57,8 @@ typedef struct
     double evasionratio;            //攻撃回避倍率
 
     //攻撃スキル
-    SKILL playerskill[10];     //覚えた攻撃スキルを格納
-    int skillCount;           //覚えた攻撃スキル数
+    SKILL playerskill[50];          //覚えたスキルを格納
+    int skillCount;                 //覚えたスキル数
 
     //アイテム
     ITEM item[100];                 //所持しているアイテムを格納
@@ -41,28 +67,6 @@ typedef struct
 }PLAYER;
 
 
-//=================
-//スキル構造体
-//=================
-typedef struct 
-{
-    char name [20];                 //スキル名
-    int reqmp;                      //必要MP
-    int powerpoint;                 //攻撃力、回復量
-    int type;                       //スキルタイプ（1 = 物理攻撃系 / 2 = 魔法攻撃系 / 3 = 回復魔法系）
-}SKILL;
-
-
-//====================
-//アイテム構造体
-//====================
-typedef struct
-{
-    char name [20];                 //アイテム名
-    int powerpoint;                 //攻撃力 / 回復量
-    int count;                      //所持数
-    int type;                       //アイテムタイプ（1 = 攻撃系 / 2 = HP回復系 / 3 = MP回復系）
-}ITEM;
 
 
 //==============================
@@ -89,4 +93,31 @@ PLAYER player;
 //関数のプロトタイプ宣言
 //=========================
 
+//パラメーター設定
 void parameterset(PLAYER *p);
+
+//戦闘前準備
+void prebattle(PLAYER *p);
+//戦闘ステージ
+void stone(PLAYER *p);
+
+//設定系
+void skillSet(SKILL skills[]);
+void itemset(ITEM items[]);
+
+//スキル系
+void skilldisplay(PLAYER *p);
+void useskill(PLAYER *p);
+
+//アイテム系
+void itemdisplay(PLAYER *p);
+void useitem(PLAYER *p);
+
+//ファイル保存系
+void save();
+void levelup();
+
+
+
+
+

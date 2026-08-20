@@ -9,11 +9,11 @@ void parameterset(PLAYER *p)
     int select = 0;
 
     printf("--キャラクターを選択してください--\n\n");
-    printf("1.パラディン\n");
-    printf("2.ソルジャー\n");
-    printf("3.ウィザード\n");
-    printf("4.アクロバット\n");
-    printf("5.アサシン\n");
+    printf("1.プリズム [パラディン]\n");
+    printf("2.ボイド [ソルジャー]\n");
+    printf("3.スキュード [ウィザード]\n");
+    printf("4.ポロル [アクロバット]\n");
+    printf("5.シェルク [アサシン]\n");
 
     do
     {
@@ -278,8 +278,10 @@ void parameterset(PLAYER *p)
         p -> skillCount++;
 
         break;
+
+        default:
+            printf("不正な値です\n");
+        break;
     }
-
-
-
+        return;
 }

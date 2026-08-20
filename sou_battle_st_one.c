@@ -3,9 +3,9 @@
 #include"head_rpg.h"
 
 
-void save()
+void stone(PLAYER *p)
 {
-    printf("セーブ処理（未実装）\n\n");
+    printf("ステージ1（未実装）");
 
     return;
 }
