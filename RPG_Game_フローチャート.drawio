@@ -1,0 +1,575 @@
+<mxfile host="app.diagrams.net" pages="5">
+  <diagram name="全体" id="X1hsUx0IF8qOo3UqNzZs">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="JRbjJu6HJBuxN1PDtvIU-34" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;dashed=1;dashPattern=12 12;strokeColor=#FF0000;strokeWidth=3;" value="" vertex="1">
+          <mxGeometry height="230" width="400" x="240" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="JRbjJu6HJBuxN1PDtvIU-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;第1完成版まで&lt;/font&gt;&lt;/b&gt;&lt;div&gt;&lt;b&gt;&lt;font size=&quot;3&quot;&gt;フローチャート&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="50" width="140" x="20" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="JRbjJu6HJBuxN1PDtvIU-2" edge="1" parent="1" source="JRbjJu6HJBuxN1PDtvIU-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;innerLoopWaypoints=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="JRbjJu6HJBuxN1PDtvIU-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="JRbjJu6HJBuxN1PDtvIU-3" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;全体の流れ&lt;/font&gt;" vertex="1">
+          <mxGeometry height="50" width="125" x="90" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="JRbjJu6HJBuxN1PDtvIU-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="ゲーム開始&lt;div&gt;(Main)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="300" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="JRbjJu6HJBuxN1PDtvIU-5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="プレイヤー&lt;div&gt;選択&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="300" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="JRbjJu6HJBuxN1PDtvIU-6" edge="1" parent="1" source="JRbjJu6HJBuxN1PDtvIU-4" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="JRbjJu6HJBuxN1PDtvIU-5" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="413" y="280" as="sourcePoint" />
+            <mxPoint x="463" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JRbjJu6HJBuxN1PDtvIU-8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="① 戦闘準備" vertex="1">
+          <mxGeometry height="60" width="120" x="300" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="JRbjJu6HJBuxN1PDtvIU-9" edge="1" parent="1" source="JRbjJu6HJBuxN1PDtvIU-5" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="JRbjJu6HJBuxN1PDtvIU-8" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="353" y="370" as="sourcePoint" />
+            <mxPoint x="353" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JRbjJu6HJBuxN1PDtvIU-12" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="② 戦闘&lt;div&gt;（ステージ・ボス戦）&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="300" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="JRbjJu6HJBuxN1PDtvIU-15" edge="1" parent="1" source="JRbjJu6HJBuxN1PDtvIU-12" style="endArrow=classic;html=1;rounded=0;exitX=0.638;exitY=-0.003;exitDx=0;exitDy=0;exitPerimeter=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="280" y="460" as="sourcePoint" />
+            <mxPoint x="376.56" y="460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JRbjJu6HJBuxN1PDtvIU-16" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="341.28" y="460" as="sourcePoint" />
+            <mxPoint x="341.28" y="519.28" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JRbjJu6HJBuxN1PDtvIU-17" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="430" y="540" />
+            </Array>
+            <mxPoint x="420" y="540" as="sourcePoint" />
+            <mxPoint x="480" y="540" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JRbjJu6HJBuxN1PDtvIU-18" edge="1" parent="1" source="JRbjJu6HJBuxN1PDtvIU-12" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="JRbjJu6HJBuxN1PDtvIU-28" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="360" y="620" />
+            </Array>
+            <mxPoint x="230" y="650" as="sourcePoint" />
+            <mxPoint x="280" y="600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JRbjJu6HJBuxN1PDtvIU-19" edge="1" parent="1" source="JRbjJu6HJBuxN1PDtvIU-27" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.667;exitDx=0;exitDy=0;exitPerimeter=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="440" y="440" />
+            </Array>
+            <mxPoint x="370" y="490" as="sourcePoint" />
+            <mxPoint x="420" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JRbjJu6HJBuxN1PDtvIU-20" edge="1" parent="1" source="JRbjJu6HJBuxN1PDtvIU-8" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.333;exitDx=0;exitDy=0;exitPerimeter=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="480" y="420" />
+            </Array>
+            <mxPoint x="430" y="440" as="sourcePoint" />
+            <mxPoint x="480" y="420" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JRbjJu6HJBuxN1PDtvIU-21" edge="1" parent="1" source="JRbjJu6HJBuxN1PDtvIU-26" style="endArrow=classic;html=1;rounded=0;exitX=-0.015;exitY=0.667;exitDx=0;exitDy=0;exitPerimeter=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points" />
+            <mxPoint x="470" y="570" as="sourcePoint" />
+            <mxPoint x="420" y="560" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JRbjJu6HJBuxN1PDtvIU-26" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="④ レベルアップ" vertex="1">
+          <mxGeometry height="60" width="120" x="480" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="JRbjJu6HJBuxN1PDtvIU-27" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="③ セーブ" vertex="1">
+          <mxGeometry height="60" width="120" x="480" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="JRbjJu6HJBuxN1PDtvIU-28" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="終了" vertex="1">
+          <mxGeometry height="60" width="120" x="300" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="JRbjJu6HJBuxN1PDtvIU-29" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;レベルアップ&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="90" x="410" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="JRbjJu6HJBuxN1PDtvIU-30" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;HPが0&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="360" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="JRbjJu6HJBuxN1PDtvIU-31" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;戦闘開始&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="270" y="475" as="geometry" />
+        </mxCell>
+        <mxCell id="JRbjJu6HJBuxN1PDtvIU-32" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;戦闘終了&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="380" y="475" as="geometry" />
+        </mxCell>
+        <mxCell id="JRbjJu6HJBuxN1PDtvIU-36" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;span style=&quot;color: rgb(255, 0, 0);&quot;&gt;&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;各処理の&lt;/font&gt;&lt;/b&gt;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(255, 0, 0);&quot;&gt;&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;詳細チャートを作成&lt;/font&gt;&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="50" width="165" x="475" y="310" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="Tkuu940wcC-kB2sdIhJ6" name="① 戦闘準備">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="nZrrECoMn_MdpFOnmrWh-7" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="使用スキル選択&lt;div&gt;（番号指定）&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="120" x="210" y="550" as="geometry" />
+        </mxCell>
+        <mxCell id="dX-rRJ2nUszz2csWCluh-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;① 戦闘準備&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="40" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="tvlf7yP7xJBm8HYT7I6H-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="所持スキル&lt;div&gt;一覧表示&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="260" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="tvlf7yP7xJBm8HYT7I6H-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="セーブへ" vertex="1">
+          <mxGeometry height="60" width="120" x="40" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="tvlf7yP7xJBm8HYT7I6H-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="戦闘へ" vertex="1">
+          <mxGeometry height="60" width="120" x="480" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="tvlf7yP7xJBm8HYT7I6H-7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="スキル使用&lt;div&gt;（回復限定）&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="260" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="tvlf7yP7xJBm8HYT7I6H-8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="所持アイテム&lt;div&gt;一覧表示&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="480" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="tvlf7yP7xJBm8HYT7I6H-9" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="アイテム使用&lt;div&gt;（回復限定）&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="680" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="tvlf7yP7xJBm8HYT7I6H-10" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;dashed=1;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="320" y="120" as="sourcePoint" />
+            <mxPoint x="320" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tvlf7yP7xJBm8HYT7I6H-11" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="キャラクター&lt;div&gt;選択から&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="90" x="220" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="tvlf7yP7xJBm8HYT7I6H-12" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;" value="行動選択" vertex="1">
+          <mxGeometry height="80" width="160" x="240" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="tvlf7yP7xJBm8HYT7I6H-13" edge="1" parent="1" source="tvlf7yP7xJBm8HYT7I6H-12" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;endFill=1;startArrow=classic;startFill=1;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="120" y="260" as="sourcePoint" />
+            <mxPoint x="160" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tvlf7yP7xJBm8HYT7I6H-14" edge="1" parent="1" source="nZrrECoMn_MdpFOnmrWh-2" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;startArrow=classic;startFill=1;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="310" y="500" as="sourcePoint" />
+            <mxPoint x="320" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tvlf7yP7xJBm8HYT7I6H-15" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="400" y="240" as="sourcePoint" />
+            <mxPoint x="480" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tvlf7yP7xJBm8HYT7I6H-16" edge="1" parent="1" source="tvlf7yP7xJBm8HYT7I6H-12" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;startArrow=classic;startFill=1;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="380" y="390" as="sourcePoint" />
+            <mxPoint x="320" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tvlf7yP7xJBm8HYT7I6H-17" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="スキル・&lt;div&gt;アイテム使用&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="80" x="225" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="tvlf7yP7xJBm8HYT7I6H-18" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="セーブ" vertex="1">
+          <mxGeometry height="30" width="60" x="180" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="tvlf7yP7xJBm8HYT7I6H-19" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="戦闘" vertex="1">
+          <mxGeometry height="30" width="60" x="400" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="nZrrECoMn_MdpFOnmrWh-2" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;" value="コマンド選択" vertex="1">
+          <mxGeometry height="80" width="160" x="240" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="nZrrECoMn_MdpFOnmrWh-4" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;startArrow=classic;startFill=1;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="400" y="380" as="sourcePoint" />
+            <mxPoint x="480" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nZrrECoMn_MdpFOnmrWh-5" edge="1" parent="1" source="tvlf7yP7xJBm8HYT7I6H-2" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;startArrow=none;startFill=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="305" y="635" as="sourcePoint" />
+            <mxPoint x="320" y="600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nZrrECoMn_MdpFOnmrWh-6" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="スキル使用" vertex="1">
+          <mxGeometry height="30" width="80" x="230" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="nZrrECoMn_MdpFOnmrWh-8" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="アイテム使用" vertex="1">
+          <mxGeometry height="30" width="60" x="410" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="nZrrECoMn_MdpFOnmrWh-9" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=none;startFill=0;" target="tvlf7yP7xJBm8HYT7I6H-9" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="600" y="380" as="sourcePoint" />
+            <mxPoint x="650" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nZrrECoMn_MdpFOnmrWh-10" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;使用アイテム選択&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;（番号指定）&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="50" width="100" x="590" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="nZrrECoMn_MdpFOnmrWh-11" edge="1" parent="1" source="tvlf7yP7xJBm8HYT7I6H-7" style="endArrow=classic;html=1;rounded=0;exitX=1.023;exitY=0.438;exitDx=0;exitDy=0;exitPerimeter=0;" target="nZrrECoMn_MdpFOnmrWh-2" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="440" y="626.28" />
+              <mxPoint x="440" y="455" />
+            </Array>
+            <mxPoint x="320" y="575" as="sourcePoint" />
+            <mxPoint x="320" y="455" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nZrrECoMn_MdpFOnmrWh-12" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;div&gt;スキル&lt;/div&gt;&lt;div&gt;使用後&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="90" x="430" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="nZrrECoMn_MdpFOnmrWh-13" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0;entryDx=0;entryDy=0;" target="nZrrECoMn_MdpFOnmrWh-2" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="740" y="310" />
+              <mxPoint x="590" y="310" />
+              <mxPoint x="440" y="310" />
+            </Array>
+            <mxPoint x="740" y="350" as="sourcePoint" />
+            <mxPoint x="510" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nZrrECoMn_MdpFOnmrWh-14" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;アイテム&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;使用後&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="550" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="nZrrECoMn_MdpFOnmrWh-15" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="キャンセル" vertex="1">
+          <mxGeometry height="30" width="70" x="330" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="nZrrECoMn_MdpFOnmrWh-16" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="キャンセル" vertex="1">
+          <mxGeometry height="30" width="70" x="405" y="390" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="NQ4qIrJUeR0CJECxY_-u" name="② 戦闘">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="z0vBplnWtmjxsgfTISo5-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;② 戦闘&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="-200" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="bQGM_ybQIjqM_4uwmNKJ-1" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;dashed=1;dashPattern=8 8;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="360" y="80" as="sourcePoint" />
+            <mxPoint x="360" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZqlZ0mnqF-HIoNqmP2er-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="戦闘準備&lt;div&gt;から&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="290" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="ZqlZ0mnqF-HIoNqmP2er-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="エンカウント&lt;div&gt;（ランダム）&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="300" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="ZqlZ0mnqF-HIoNqmP2er-3" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;" value="行動選択 ①" vertex="1">
+          <mxGeometry height="80" width="160" x="280" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="ZqlZ0mnqF-HIoNqmP2er-4" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=1;entryDx=0;entryDy=0;" target="ZqlZ0mnqF-HIoNqmP2er-3" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="480" y="360" />
+            </Array>
+            <mxPoint x="480" y="320" as="sourcePoint" />
+            <mxPoint x="480" y="410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZqlZ0mnqF-HIoNqmP2er-5" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="-fLz_DK49XddY69_Oy_o-14" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="360" y="520" as="sourcePoint" />
+            <mxPoint x="360" y="640" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZqlZ0mnqF-HIoNqmP2er-6" edge="1" parent="1" source="-fLz_DK49XddY69_Oy_o-3" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;startArrow=classic;startFill=1;" target="-fLz_DK49XddY69_Oy_o-15" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="440" y="530" as="sourcePoint" />
+            <mxPoint x="520" y="520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZqlZ0mnqF-HIoNqmP2er-7" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="-fLz_DK49XddY69_Oy_o-3" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="359.5" y="360" as="sourcePoint" />
+            <mxPoint x="360" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZqlZ0mnqF-HIoNqmP2er-8" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;startArrow=none;startFill=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="440" y="320" as="sourcePoint" />
+            <mxPoint x="520" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZqlZ0mnqF-HIoNqmP2er-9" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="ZqlZ0mnqF-HIoNqmP2er-3" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="360" y="220" as="sourcePoint" />
+            <mxPoint x="410" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZqlZ0mnqF-HIoNqmP2er-10" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="逃げる&lt;div&gt;（成功）&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="450" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="ZqlZ0mnqF-HIoNqmP2er-11" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="逃げる&lt;div&gt;（失敗）&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="450" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="ZqlZ0mnqF-HIoNqmP2er-12" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="戦闘前準備へ&lt;div&gt;（HP・MPともに&lt;/div&gt;&lt;div&gt;最大値の半分回復）&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="520" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="-fLz_DK49XddY69_Oy_o-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="通常攻撃/&lt;div&gt;スキル使用/&lt;/div&gt;&lt;div&gt;アイテム使用&lt;/div&gt;" vertex="1">
+          <mxGeometry height="50" width="90" x="260" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="-fLz_DK49XddY69_Oy_o-3" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;" value="&lt;div&gt;行動選択 ②&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="160" x="280" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="-fLz_DK49XddY69_Oy_o-4" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="通常攻撃" vertex="1">
+          <mxGeometry height="30" width="60" x="280" y="585" as="geometry" />
+        </mxCell>
+        <mxCell id="-fLz_DK49XddY69_Oy_o-5" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="スキル使用" vertex="1">
+          <mxGeometry height="30" width="70" x="465" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="-fLz_DK49XddY69_Oy_o-6" edge="1" parent="1" source="-fLz_DK49XddY69_Oy_o-3" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;startArrow=classic;startFill=1;" target="_zS5-Ozo7dxMlI3R3xEA-1" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="140" y="520" />
+            </Array>
+            <mxPoint x="150" y="545" as="sourcePoint" />
+            <mxPoint x="200" y="520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-fLz_DK49XddY69_Oy_o-7" edge="1" parent="1" source="-fLz_DK49XddY69_Oy_o-14" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="_zS5-Ozo7dxMlI3R3xEA-10" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="750" y="795" as="sourcePoint" />
+            <mxPoint x="520" y="680" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-fLz_DK49XddY69_Oy_o-8" edge="1" parent="1" source="_zS5-Ozo7dxMlI3R3xEA-5" style="endArrow=classic;html=1;rounded=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#FF0000;" target="_zS5-Ozo7dxMlI3R3xEA-10" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="-90" y="960" />
+              <mxPoint x="760" y="960" />
+              <mxPoint x="760" y="680" />
+            </Array>
+            <mxPoint x="-50" y="800" as="sourcePoint" />
+            <mxPoint x="770" y="680" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-fLz_DK49XddY69_Oy_o-9" edge="1" parent="1" source="-fLz_DK49XddY69_Oy_o-15" style="endArrow=classic;html=1;rounded=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="_zS5-Ozo7dxMlI3R3xEA-9" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="480" y="600" />
+              <mxPoint x="480" y="830" />
+            </Array>
+            <mxPoint x="500" y="650" as="sourcePoint" />
+            <mxPoint x="480" y="900" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-fLz_DK49XddY69_Oy_o-10" edge="1" parent="1" source="-fLz_DK49XddY69_Oy_o-15" style="endArrow=classic;html=1;rounded=0;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" target="_zS5-Ozo7dxMlI3R3xEA-10" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points" />
+            <mxPoint x="650" y="615" as="sourcePoint" />
+            <mxPoint x="700" y="565" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-fLz_DK49XddY69_Oy_o-11" edge="1" parent="1" source="_zS5-Ozo7dxMlI3R3xEA-10" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="520" y="890" as="sourcePoint" />
+            <mxPoint x="620" y="800" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-fLz_DK49XddY69_Oy_o-12" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="アイテム使用" vertex="1">
+          <mxGeometry height="20" width="80" x="170" y="495" as="geometry" />
+        </mxCell>
+        <mxCell id="-fLz_DK49XddY69_Oy_o-14" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="攻撃 or 被行動" vertex="1">
+          <mxGeometry height="60" width="120" x="300" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="-fLz_DK49XddY69_Oy_o-15" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="スキル使用&amp;nbsp;&lt;div&gt;or 被行動&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="560" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="_zS5-Ozo7dxMlI3R3xEA-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="攻撃 or 被行動" vertex="1">
+          <mxGeometry height="60" width="120" x="80" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="_zS5-Ozo7dxMlI3R3xEA-2" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="140" y="520" as="sourcePoint" />
+            <mxPoint y="520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_zS5-Ozo7dxMlI3R3xEA-3" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="攻撃アイテム" vertex="1">
+          <mxGeometry height="30" width="80" x="50" y="550" as="geometry" />
+        </mxCell>
+        <mxCell id="_zS5-Ozo7dxMlI3R3xEA-4" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="回復アイテム" vertex="1">
+          <mxGeometry height="30" width="80" x="20" y="485" as="geometry" />
+        </mxCell>
+        <mxCell id="_zS5-Ozo7dxMlI3R3xEA-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="回復 or 被行動" vertex="1">
+          <mxGeometry height="60" width="120" x="-120" y="495" as="geometry" />
+        </mxCell>
+        <mxCell id="_zS5-Ozo7dxMlI3R3xEA-6" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="キャンセル&lt;div&gt;/ アイテム使用&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="90" x="165" y="525" as="geometry" />
+        </mxCell>
+        <mxCell id="_zS5-Ozo7dxMlI3R3xEA-7" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="キャンセル&lt;div&gt;/ スキル使用&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="80" x="460" y="530" as="geometry" />
+        </mxCell>
+        <mxCell id="_zS5-Ozo7dxMlI3R3xEA-8" edge="1" parent="1" source="-fLz_DK49XddY69_Oy_o-14" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="_zS5-Ozo7dxMlI3R3xEA-9" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="330" y="790" as="sourcePoint" />
+            <mxPoint x="360" y="760" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_zS5-Ozo7dxMlI3R3xEA-9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="モンスターの&lt;div&gt;HPが0&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="300" y="800" as="geometry" />
+        </mxCell>
+        <mxCell id="_zS5-Ozo7dxMlI3R3xEA-10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="プレイヤーの&lt;div&gt;HPが0&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="560" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="_zS5-Ozo7dxMlI3R3xEA-11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="GAME OVER" vertex="1">
+          <mxGeometry height="60" width="120" x="560" y="800" as="geometry" />
+        </mxCell>
+        <mxCell id="_zS5-Ozo7dxMlI3R3xEA-13" edge="1" parent="1" source="_zS5-Ozo7dxMlI3R3xEA-9" style="endArrow=classic;html=1;rounded=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="330" y="1040" />
+              <mxPoint x="-240" y="1040" />
+              <mxPoint x="-240" y="200" />
+            </Array>
+            <mxPoint x="210" y="1080" as="sourcePoint" />
+            <mxPoint x="300" y="197.02" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_zS5-Ozo7dxMlI3R3xEA-14" edge="1" parent="1" source="_zS5-Ozo7dxMlI3R3xEA-1" style="endArrow=classic;html=1;rounded=0;exitX=0.645;exitY=0.976;exitDx=0;exitDy=0;exitPerimeter=0;strokeColor=#0000FF;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="157.4" y="830" />
+            </Array>
+            <mxPoint x="630" y="980" as="sourcePoint" />
+            <mxPoint x="240" y="830" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_zS5-Ozo7dxMlI3R3xEA-15" edge="1" parent="1" source="_zS5-Ozo7dxMlI3R3xEA-5" style="endArrow=classic;html=1;rounded=0;exitX=0.681;exitY=0.988;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#0000FF;" target="_zS5-Ozo7dxMlI3R3xEA-9" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="-38.28" y="830" />
+            </Array>
+            <mxPoint x="-50" y="890" as="sourcePoint" />
+            <mxPoint x="140" y="730" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_zS5-Ozo7dxMlI3R3xEA-16" edge="1" parent="1" source="_zS5-Ozo7dxMlI3R3xEA-1" style="endArrow=classic;html=1;rounded=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;strokeColor=#FF0000;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="110" y="960" />
+            </Array>
+            <mxPoint x="130" y="830" as="sourcePoint" />
+            <mxPoint x="280" y="960" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZLU0gwOc42SzWE_GB4IN-1" edge="1" parent="1" source="_zS5-Ozo7dxMlI3R3xEA-9" style="endArrow=classic;html=1;rounded=0;exitX=0.75;exitY=1;exitDx=0;exitDy=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="390" y="1040" />
+            </Array>
+            <mxPoint x="370" y="740" as="sourcePoint" />
+            <mxPoint x="640" y="1040" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZLU0gwOc42SzWE_GB4IN-2" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="レベルアップ" vertex="1">
+          <mxGeometry height="30" width="80" x="480" y="1010" as="geometry" />
+        </mxCell>
+        <mxCell id="ZLU0gwOc42SzWE_GB4IN-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="レベルアップへ" vertex="1">
+          <mxGeometry height="60" width="120" x="640" y="1010" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="OEPnyn7LpY9iCEPQDYUe" name="③ セーブ">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="fDPSRgDuhRUSRkDvl6Bn-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;③ セーブ&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="80" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="fDPSRgDuhRUSRkDvl6Bn-3" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;dashed=1;dashPattern=8 8;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="400" y="80" as="sourcePoint" />
+            <mxPoint x="400" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AT21xypMm6t3Cm-kMWXw-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="戦闘準備&lt;div&gt;から&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="80" x="320" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="X14mazh_b_6CJZKhPYwo-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="ファイル選択" vertex="1">
+          <mxGeometry height="60" width="120" x="340" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="X14mazh_b_6CJZKhPYwo-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="データ保存" vertex="1">
+          <mxGeometry height="60" width="120" x="340" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="X14mazh_b_6CJZKhPYwo-4" edge="1" parent="1" source="X14mazh_b_6CJZKhPYwo-1" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="X14mazh_b_6CJZKhPYwo-2" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="490" y="310" as="sourcePoint" />
+            <mxPoint x="540" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="X14mazh_b_6CJZKhPYwo-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="戦闘準備&lt;div&gt;に戻る&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="340" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="X14mazh_b_6CJZKhPYwo-6" edge="1" parent="1" source="X14mazh_b_6CJZKhPYwo-2" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="X14mazh_b_6CJZKhPYwo-5" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points" />
+            <mxPoint x="410" y="380" as="sourcePoint" />
+            <mxPoint x="460" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="kyCIpgrZ64R9h8Vr3DcO" name="④ レベルアップ">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2CW0SxsIqZ61DHyb2fWg-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="④ レベルアップ" vertex="1">
+          <mxGeometry height="60" width="120" x="80" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="2CW0SxsIqZ61DHyb2fWg-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="レベルアップ" vertex="1">
+          <mxGeometry height="60" width="120" x="340" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="2CW0SxsIqZ61DHyb2fWg-4" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;dashed=1;dashPattern=8 8;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="400" y="80" as="sourcePoint" />
+            <mxPoint x="400" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2CW0SxsIqZ61DHyb2fWg-5" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="戦闘から" vertex="1">
+          <mxGeometry height="30" width="60" x="320" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="2CW0SxsIqZ61DHyb2fWg-6" edge="1" parent="1" source="2CW0SxsIqZ61DHyb2fWg-3" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="470" y="420" as="sourcePoint" />
+            <mxPoint x="400" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2CW0SxsIqZ61DHyb2fWg-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="ステータス上昇" vertex="1">
+          <mxGeometry height="60" width="120" x="340" y="320" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

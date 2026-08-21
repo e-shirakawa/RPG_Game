@@ -37,6 +37,7 @@ typedef struct
     int hp;                         //HP
     int mp;                         //MP
     int power;                      //攻撃力
+    int speed;                      //素早さ
     double physicaldefence;         //物理防御力（敵の物理攻撃力×物理防御力（低いほど防御力が高い））
     double magicaldefence;          //魔法防御力（敵の魔法攻撃力×魔法防御力（低いほど防御力が高い））
     int maxHp;                      //最大HP（レベルアップで上昇）
@@ -74,11 +75,13 @@ typedef struct
 //==============================
 typedef struct
 {
-    char name [20];
-    int power;
-    int defence;
-    SKILL monsterskill [10];
-    int gainexp;
+    char name [20];                 //名前
+    int power;                      //攻撃力
+    int speed;                      //素早さ
+    double physicaldefence;         //物理防御力
+    double magicaldiffence;         //魔法防御力
+    SKILL monsterskill [10];        //所持スキル
+    int gainexp;                    //撃破時の獲得経験値
 }MONSTER;
 
 
