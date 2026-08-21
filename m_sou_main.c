@@ -5,6 +5,7 @@ int main()
 {
     //ポインタ変数へのplayer変数の格納
     PLAYER *p = &player;
+    MONSTER *m = &monster;
 
 
     printf("【ゲーム開始】\n\n");

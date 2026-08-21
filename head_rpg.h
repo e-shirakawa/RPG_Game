@@ -90,6 +90,7 @@ typedef struct
 //プレイヤー構造体変数の宣言
 //============================
 PLAYER player;
+MONSTER monster;
 
 
 //=========================
@@ -110,7 +111,10 @@ void itemset(ITEM items[]);
 
 //スキル系
 void skilldisplay(PLAYER *p);
-void useskill(PLAYER *p);
+void preuseskill_pre(PLAYER *p);
+void preuseskill_use(PLAYER *p);
+void useskill_pre(PLAYER *p);
+void useskill_use(PLAYER *p);
 
 //アイテム系
 void itemdisplay(PLAYER *p);

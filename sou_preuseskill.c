@@ -3,9 +3,8 @@
 #include"head_rpg.h"
 
 //======================================
-//この関数は戦闘中のスキル使用専用？（仮）
+//この関数は戦闘準備のスキル使用専用？（仮）
 //======================================
-//→※闘準備前の作成途中ものをコピーしている状態
 
 /*
     スキル選択について
@@ -23,8 +22,7 @@
 //=========================
 //スキル使用前段階の関数
 //=========================
-
-void useskill_pre(PLAYER *p)
+void preuseskill_pre(PLAYER *p)
 {
     //変数の宣言
     int command1;        //選択コマンド1
@@ -57,7 +55,7 @@ void useskill_pre(PLAYER *p)
 
                 if(command2 == 1)
                 {
-                    useskill_use(p);
+                    preuseskill_use(p);
                 }
                 else if(command2 == 2)
                 {
@@ -83,8 +81,6 @@ void useskill_pre(PLAYER *p)
 
     }while(command1 < 1 || command1 > 2);
 
-    
-
     EXIT:
 
     return;
@@ -96,56 +92,78 @@ void useskill_pre(PLAYER *p)
 //=========================
 //スキル使用の関数
 //=========================
-
-void useskill_use(PLAYER *p)
+void preuseskill_use(PLAYER *p)
 {
     //変数宣言
     int skillselect;
 
     //変数の初期化
     skillselect = 0;
-
-
-    printf("使用するスキルを選択してください\n\n");
+    
 
     do
     {
+
+        printf("使用するスキルを選択してください\n\n");
+        printf("▶使用するスキル番号を選択 ▶-1：戻る\n");
+
         //場合分けが必要？（1.物理攻撃 2.魔法攻撃 3.回復）
         //[skillselect-1]が配列の要素番号に該当
+        //戦闘準備なので回復のみ使用できるように制限？
 
         scanf("%d", &skillselect);
 
         if(p -> playerskill[skillselect - 1].type == 1)
         {
-            //物理スキルによる攻撃
-            printf("");
-            printf("%sの攻撃！\n", p -> name);
-            printf("%sは%sを発動した\n\n", p -> name, p -> playerskill[skillselect].name);
-
-            //ダメージ処理
-
-
-            printf("%sに%dのダメージ");
-
-
-
+            printf("戦闘前は回復スキルのみ使用可能です\n");
         }
         else if(p -> playerskill[skillselect - 1].type == 2)
         {
-            //相手モンスターへのダメージ処理（魔法）
-
+            printf("戦闘前は回復スキルのみ使用可能です\n");
         }
         else if(p -> playerskill[skillselect - 1].type == 3)
         {
-            //自分のHPの回復処理
+            //回復魔法によるHP回復
+            printf("");
+            printf("%sは%sを唱えた！\n", p -> name, p -> playerskill[skillselect -1].name);
+
+            if(p -> mp >= p -> playerskill[skillselect - 1].reqmp)
+            {
+
+                //回復処理（上限を超えないような処理が必要？）
+                if (p -> hp < p -> maxHp)
+                {
+                    p -> hp += p -> playerskill[skillselect -1].powerpoint;
+                    p -> mp -= p -> playerskill[skillselect -1].reqmp;
+
+                    printf("%sはMPを%d消費した\n", p -> name, p -> playerskill[skillselect - 1].reqmp);
+                    printf("%sはHPを%d回復した\n", p -> name, p -> playerskill[skillselect - 1].powerpoint);
+
+                    if(p -> hp > p -> maxHp)
+                    {
+                        //HPが上限を超える場合、HP上限値で上書き
+                        p -> hp = p -> maxHp;
+                    }
+                }
+                else if (p -> hp == p -> maxHp)
+                {
+                    printf("体力はこれ以上回復できません\n");
+                }
+            }
+            else if(p -> mp < p -> playerskill[skillselect - 1].reqmp)
+            {
+                printf("MPが不足しています\n");
+            }
 
         }
+        else if(skillselect > p -> skillCount)
+        {
+            printf("表示されているスキル番号を選択してください\n");
+        }
 
-    } while (skillselect < 1 || skillselect > p -> skillCount);
-    
+    } while (skillselect != -1 || skillselect > p -> skillCount);
 
-
-    //printf("テストテストテスト");
+    EXIT:
 
     return;
 }

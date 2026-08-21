@@ -15,6 +15,8 @@ void prebattle(PLAYER *p)
     useselect = 0;
     tobattle = 0;
 
+    printf("\n");
+
     printf("【戦闘前画面】\n\n");
 
     while(tobattle != 1)
@@ -59,7 +61,7 @@ void prebattle(PLAYER *p)
 
                         case 1:     //スキル使用
 
-                            useskill(p);
+                            preuseskill_pre(p);
                             break;
 
                         

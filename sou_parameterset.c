@@ -33,7 +33,8 @@ void parameterset(PLAYER *p)
         //基礎パラメーター
         strcpy(p -> name, "プリズム");
         p -> hp = 600;
-        p -> mp = 180;
+        //p -> mp = 180;
+        p -> mp = 1;
         p -> power = 73;
         p -> physicaldefence = 0.865;
         p -> magicaldefence = 0.895;
