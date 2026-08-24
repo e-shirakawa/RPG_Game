@@ -3,9 +3,10 @@
 #include"head_rpg.h"
 
 
-void stone(PLAYER *p)
+void st_one(PLAYER *p)
 {
-    printf("ステージ1（未実装）");
+    //モンスターとエンカウント
+
 
     return;
 }

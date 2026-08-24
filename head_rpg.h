@@ -100,14 +100,19 @@ MONSTER monster;                    //モンスター構造体変数
 //パラメーター設定
 void parameterset(PLAYER *p);
 
+
 //戦闘前準備
 void prebattle(PLAYER *p);
+
+
 //戦闘ステージ
-void stone(PLAYER *p);
+void st_one(PLAYER *p);
+
 
 //設定系
 void skillSet(SKILL skills[]);
 void itemset(ITEM items[]);
+
 
 //スキル系
 void skilldisplay(PLAYER *p);
@@ -115,6 +120,7 @@ void preuseskill_pre(PLAYER *p);
 void preuseskill_use(PLAYER *p);
 void useskill_pre(PLAYER *p);
 void useskill_use(PLAYER *p);
+
 
 //アイテム系
 void itemdisplay(PLAYER *p);

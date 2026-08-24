@@ -115,6 +115,12 @@ void skillSet(SKILL skills[])
     skills[20].powerpoint = 120;
     skills[0].type = 20;
 
+
+
+//======================================
+//魔法攻撃系
+//======================================
+
     strcpy(skills[21].name, "突風突き");
     skills[21].reqmp = 20;
     skills[21].powerpoint = 120;
@@ -218,7 +224,7 @@ void skillSet(SKILL skills[])
 
 
 //======================================
-//魔法攻撃系
+//回復魔法系
 //======================================
 
     strcpy(skills[41].name, "バブル");
@@ -270,6 +276,11 @@ void skillSet(SKILL skills[])
     skills[50].reqmp = 20;
     skills[50].powerpoint = 120;
     skills[0].type = 20;
+
+
+//======================================
+//モンスタースキル
+//======================================
 
     strcpy(skills[51].name, "突風突き");
     skills[51].reqmp = 20;
@@ -420,12 +431,6 @@ void skillSet(SKILL skills[])
     skills[80].reqmp = 20;
     skills[80].powerpoint = 120;
     skills[0].type = 20;
-
-
-
-//======================================
-//回復魔法系
-//======================================
 
     strcpy(skills[81].name, "ウォッシュ");
     skills[81].reqmp = 15;
