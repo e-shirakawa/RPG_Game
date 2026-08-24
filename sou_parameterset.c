@@ -32,10 +32,12 @@ void parameterset(PLAYER *p)
 
         //基礎パラメーター
         strcpy(p -> name, "プリズム");
-        p -> hp = 600;
+        //p -> hp = 600;
+        p -> hp = 1;            //テスト用
         //p -> mp = 180;
-        p -> mp = 1;
+        p -> mp = 1;            //テスト用
         p -> power = 73;
+        p -> speed = 34;
         p -> physicaldefence = 0.865;
         p -> magicaldefence = 0.895;
         p -> maxHp = 600;
@@ -76,6 +78,23 @@ void parameterset(PLAYER *p)
 
         p -> skillCount++;
 
+
+        //アイテム1
+        strcpy(p -> item[0].name, "薬草");
+        p -> item[0].powerpoint = 120;
+        p -> item[0].count = 5;
+        p -> item[0].type = 2;
+
+        p -> itemCount += p -> item[0].count;
+
+        //アイテム2
+        strcpy(p -> item[1].name, "エーテル");
+        p -> item[1].powerpoint = 50;
+        p -> item[1].count = 3;
+        p -> item[1].type = 3;
+
+        p -> itemCount += p -> item[1].count;
+
         break;
 
 
@@ -86,6 +105,7 @@ void parameterset(PLAYER *p)
         p -> hp = 920;
         p -> mp = 60;
         p -> power = 120;
+        p -> speed = 17;
         p -> physicaldefence = 0.785;
         p -> magicaldefence = 0.965;
         p -> maxHp = 920;
@@ -118,6 +138,23 @@ void parameterset(PLAYER *p)
 
         p -> skillCount++;
 
+
+        //アイテム1
+        strcpy(p -> item[0].name, "薬草");
+        p -> item[0].powerpoint = 120;
+        p -> item[0].count = 10;
+        p -> item[0].type = 2;
+
+        p -> itemCount += p -> item[0].count;
+
+        //アイテム2
+        strcpy(p -> item[1].name, "エーテル");
+        p -> item[1].powerpoint = 50;
+        p -> item[1].count = 2;
+        p -> item[1].type = 3;
+
+        p -> itemCount += p -> item[1].count;
+
         break;
 
 
@@ -129,6 +166,7 @@ void parameterset(PLAYER *p)
         p -> hp = 390;
         p -> mp = 290;
         p -> power = 38;
+        p -> speed = 23;
         p -> physicaldefence = 0.925;
         p -> magicaldefence = 0.845;
         p -> maxHp = 390;
@@ -169,6 +207,23 @@ void parameterset(PLAYER *p)
 
         p -> skillCount++;
 
+
+        //アイテム1
+        strcpy(p -> item[0].name, "薬草");
+        p -> item[0].powerpoint = 120;
+        p -> item[0].count = 3;
+        p -> item[0].type = 2;
+
+        p -> itemCount += p -> item[0].count;
+
+        //アイテム2
+        strcpy(p -> item[1].name, "エーテル");
+        p -> item[1].powerpoint = 50;
+        p -> item[1].count = 5;
+        p -> item[1].type = 3;
+
+        p -> itemCount += p -> item[1].count;
+
         break;
 
 
@@ -180,6 +235,7 @@ void parameterset(PLAYER *p)
         p -> hp = 490;
         p -> mp = 210;
         p -> power = 62;
+        p -> speed = 29;
         p -> physicaldefence = 0.912;
         p -> magicaldefence = 0.893;
         p -> maxHp = 490;
@@ -228,6 +284,23 @@ void parameterset(PLAYER *p)
 
         p -> skillCount++;
 
+
+        //アイテム1
+        strcpy(p -> item[0].name, "薬草");
+        p -> item[0].powerpoint = 120;
+        p -> item[0].count = 3;
+        p -> item[0].type = 2;
+
+        p -> itemCount += p -> item[0].count;
+
+        //アイテム2
+        strcpy(p -> item[1].name, "エーテル");
+        p -> item[1].powerpoint = 50;
+        p -> item[1].count = 3;
+        p -> item[1].type = 3;
+
+        p -> itemCount += p -> item[1].count;
+
         break;
 
 
@@ -238,6 +311,7 @@ void parameterset(PLAYER *p)
         p -> hp = 450;
         p -> mp = 165;
         p -> power = 42;
+        p -> speed = 41;
         p -> physicaldefence = 0.920;
         p -> magicaldefence = 0.912;
         p -> maxHp = 450;
@@ -277,6 +351,23 @@ void parameterset(PLAYER *p)
         p -> playerskill[2].type = 3;
 
         p -> skillCount++;
+
+
+        //アイテム1
+        strcpy(p -> item[0].name, "薬草");
+        p -> item[0].powerpoint = 120;
+        p -> item[0].count = 5;
+        p -> item[0].type = 2;
+
+        p -> itemCount += p -> item[0].count;
+
+        //アイテム2
+        strcpy(p -> item[1].name, "エーテル");
+        p -> item[1].powerpoint = 50;
+        p -> item[1].count = 2;
+        p -> item[1].type = 3;
+
+        p -> itemCount += p -> item[1].count;
 
         break;
 

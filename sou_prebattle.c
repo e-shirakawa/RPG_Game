@@ -67,7 +67,7 @@ void prebattle(PLAYER *p)
                         
                         case 2:     //アイテム使用
 
-                            useitem(p);
+                            preuseitem_pre(p);
                             break;
                         
 

@@ -3,7 +3,7 @@
 #include"head_rpg.h"
 
 //======================================
-//この関数は戦闘準備のスキル使用専用？（仮）
+//戦闘準備スキル使用専用
 //======================================
 
 /*
@@ -124,7 +124,6 @@ void preuseskill_use(PLAYER *p)
         else if(p -> playerskill[skillselect - 1].type == 3)
         {
             //回復魔法によるHP回復
-            printf("");
             printf("%sは%sを唱えた！\n", p -> name, p -> playerskill[skillselect -1].name);
 
             if(p -> mp >= p -> playerskill[skillselect - 1].reqmp)

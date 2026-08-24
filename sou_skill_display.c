@@ -20,7 +20,7 @@ i = 0;
         if(p -> playerskill[i].type == 1)
         {
             printf("[%d]：", (i + 1));
-            printf(p-> playerskill[i].name);
+            printf("%s", p-> playerskill[i].name);
             printf("\n");
         }
     }
@@ -36,7 +36,7 @@ i = 0;
         if(p -> playerskill[i].type == 2)
         {
             printf("[%d]：", (i + 1));
-            printf(p-> playerskill[i].name);
+            printf("%s", p-> playerskill[i].name);
             printf("\n");
         }
     }
@@ -52,7 +52,7 @@ i = 0;
         if(p -> playerskill[i].type == 3)
         {
             printf("[%d]：", (i + 1));
-            printf(p-> playerskill[i].name);
+            printf("%s", p-> playerskill[i].name);
             printf("\n");
         }
     }

@@ -87,10 +87,10 @@ typedef struct
 
 
 //============================
-//プレイヤー構造体変数の宣言
+//構造体変数の宣言
 //============================
-PLAYER player;
-MONSTER monster;
+PLAYER player;                      //プレイヤー構造体変数
+MONSTER monster;                    //モンスター構造体変数
 
 
 //=========================
@@ -118,7 +118,11 @@ void useskill_use(PLAYER *p);
 
 //アイテム系
 void itemdisplay(PLAYER *p);
-void useitem(PLAYER *p);
+void preuseitem_pre(PLAYER *p);
+void preuseitem_use(PLAYER *p);
+void useitem_pre(PLAYER *p);
+void useitem_use(PLAYER *p);
+
 
 //ファイル保存系
 void save();
