@@ -12,6 +12,7 @@ void monsterset(MONSTER monsters[])
 
     //モンスター1
     strcpy(monsters[0].name, "スライム");
+    monsters[0].hp = 146;
     monsters[0].power = 6;
     monsters[0].speed = 3;
     monsters[0].physicaldefence = 0.988;
@@ -25,6 +26,7 @@ void monsterset(MONSTER monsters[])
 
     //モンスター2
     strcpy(monsters[1].name, "グラス");
+    monsters[0].hp = 116;
     monsters[1].power = 4;
     monsters[1].speed = 5;
     monsters[1].physicaldefence = 0.990;
@@ -38,6 +40,7 @@ void monsterset(MONSTER monsters[])
 
     //モンスター3
     strcpy(monsters[2].name, "クリルモ");
+    monsters[0].hp = 182;
     monsters[2].power = 3;
     monsters[2].speed = 9;
     monsters[2].physicaldefence = 0.987;
@@ -51,6 +54,7 @@ void monsterset(MONSTER monsters[])
 
     //モンスター4
     strcpy(monsters[3].name, "アーピト");
+    monsters[0].hp = 205;
     monsters[3].power = 7;
     monsters[3].speed = 6;
     monsters[3].physicaldefence = 0.974;

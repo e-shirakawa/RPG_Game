@@ -36,7 +36,7 @@ void parameterset(PLAYER *p)
         p -> hp = 1;            //テスト用
         //p -> mp = 180;
         p -> mp = 1;            //テスト用
-        p -> power = 73;
+        p -> power = 37;
         p -> speed = 34;
         p -> physicaldefence = 0.865;
         p -> magicaldefence = 0.895;
@@ -104,7 +104,7 @@ void parameterset(PLAYER *p)
         strcpy(p -> name, "ボイド");
         p -> hp = 920;
         p -> mp = 60;
-        p -> power = 120;
+        p -> power = 53;
         p -> speed = 17;
         p -> physicaldefence = 0.785;
         p -> magicaldefence = 0.965;
@@ -165,7 +165,7 @@ void parameterset(PLAYER *p)
         strcpy(p -> name, "スキュード");
         p -> hp = 390;
         p -> mp = 290;
-        p -> power = 38;
+        p -> power = 14;
         p -> speed = 23;
         p -> physicaldefence = 0.925;
         p -> magicaldefence = 0.845;
@@ -234,7 +234,7 @@ void parameterset(PLAYER *p)
         strcpy(p -> name, "ポロル");
         p -> hp = 490;
         p -> mp = 210;
-        p -> power = 62;
+        p -> power = 21;
         p -> speed = 29;
         p -> physicaldefence = 0.912;
         p -> magicaldefence = 0.893;
@@ -310,7 +310,7 @@ void parameterset(PLAYER *p)
         strcpy(p -> name, "シェルク");
         p -> hp = 450;
         p -> mp = 165;
-        p -> power = 42;
+        p -> power = 29;
         p -> speed = 41;
         p -> physicaldefence = 0.920;
         p -> magicaldefence = 0.912;

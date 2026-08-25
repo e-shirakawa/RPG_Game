@@ -76,6 +76,7 @@ typedef struct
 typedef struct
 {
     char name [20];                 //名前
+    int hp;                         //HP                          
     int power;                      //攻撃力
     int speed;                      //素早さ
     double physicaldefence;         //物理防御力
@@ -90,7 +91,7 @@ typedef struct
 //構造体変数の宣言
 //============================
 PLAYER player;                      //プレイヤー構造体変数
-MONSTER monster;                    //モンスター構造体変数
+
 
 
 //=========================
@@ -105,13 +106,19 @@ void parameterset(PLAYER *p);
 void prebattle(PLAYER *p);
 
 
+//行動選択
+void playeraction(PLAYER *p, MONSTER monsters[]);
+void monsteraction(PLAYER *p, MONSTER monsters[]);
+
+
 //戦闘ステージ
-void st_one(PLAYER *p);
+void st_one(PLAYER *p, MONSTER monsters[]);
 
 
 //設定系
 void skillSet(SKILL skills[]);
 void itemset(ITEM items[]);
+void monsterset(MONSTER monsters[]);
 
 
 //スキル系
