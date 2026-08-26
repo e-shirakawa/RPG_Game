@@ -9,11 +9,11 @@ void parameterset(PLAYER *p)
     int select = 0;
 
     printf("--キャラクターを選択してください--\n\n");
-    printf("1.プリズム [パラディン]\n");
-    printf("2.ボイド [ソルジャー]\n");
-    printf("3.スキュード [ウィザード]\n");
-    printf("4.ポロル [アクロバット]\n");
-    printf("5.シェルク [アサシン]\n");
+    printf("1.AAA [パラディン]\n");
+    printf("2.BBB [ソルジャー]\n");
+    printf("3.CCC [ウィザード]\n");
+    printf("4.DDD [アクロバット]\n");
+    printf("5.EEE [アサシン]\n");
 
     do
     {
@@ -31,7 +31,7 @@ void parameterset(PLAYER *p)
         case 1:     //パラディンタイプ
 
         //基礎パラメーター
-        strcpy(p -> name, "プリズム");
+        strcpy(p -> name, "AAA");
         //p -> hp = 600;
         p -> hp = 1;            //テスト用
         //p -> mp = 180;
@@ -101,7 +101,7 @@ void parameterset(PLAYER *p)
         case 2:     //ソルジャータイプ
 
         //基礎パラメーター
-        strcpy(p -> name, "ボイド");
+        strcpy(p -> name, "BBB");
         p -> hp = 920;
         p -> mp = 60;
         p -> power = 53;
@@ -162,7 +162,7 @@ void parameterset(PLAYER *p)
         case 3:     //ウィザードタイプ
 
         //基礎パラメーター
-        strcpy(p -> name, "スキュード");
+        strcpy(p -> name, "CCC");
         p -> hp = 390;
         p -> mp = 290;
         p -> power = 14;
@@ -231,7 +231,7 @@ void parameterset(PLAYER *p)
         case 4:     //アクロバットタイプ
 
         //基礎パラメーター
-        strcpy(p -> name, "ポロル");
+        strcpy(p -> name, "DDD");
         p -> hp = 490;
         p -> mp = 210;
         p -> power = 21;
@@ -307,7 +307,7 @@ void parameterset(PLAYER *p)
         case 5:     //アサシンタイプ
 
         //基礎パラメーター
-        strcpy(p -> name, "シェルク");
+        strcpy(p -> name, "EEE");
         p -> hp = 450;
         p -> mp = 165;
         p -> power = 29;

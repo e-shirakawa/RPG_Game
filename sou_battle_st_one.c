@@ -1,10 +1,11 @@
 #include<stdio.h>
 #include<string.h>
 #include<stdlib.h>
+#include<time.h>
 #include"head_rpg.h"
 
 
-void st_one(PLAYER *p, MONSTER m[])
+void st_one(PLAYER *p, MONSTER monsters[])
 {
 
     //変数宣言
@@ -17,7 +18,7 @@ void st_one(PLAYER *p, MONSTER m[])
     //変数の初期化
     random = 0;
     wincount = 0;
-    m = 0;
+    m = NULL;
 
     //乱数生成
     srand((unsigned int)time(NULL));
@@ -25,14 +26,14 @@ void st_one(PLAYER *p, MONSTER m[])
     random = rand() % 4;       //0～3の乱数を生成
 
     //生成したモンスターのアドレスをポインタに格納
-    m = &m[random];
+    m = &monsters[random];
 
     //=====================
     //戦闘処理
     //=====================
     do
     {
-        printf("%Sがあらわれた!!\n\n", m -> name);
+        printf("%sがあらわれた!!\n\n", m -> name);
 
         while(p -> hp > 0 && m -> hp >0)
         {

@@ -17,7 +17,7 @@ int main()
     //==========================
     //モンスターパラメーター設定
     //==========================
-    sou_monsterset(monsters);
+    monsterset(monsters);
 
 
     printf("【ゲーム開始】\n\n");
