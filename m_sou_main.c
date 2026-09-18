@@ -2,6 +2,8 @@
 #include<string.h>
 #include"head_rpg.h"
 
+PLAYER player; 
+
 int main()
 {
 

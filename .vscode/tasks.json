@@ -1,18 +1,19 @@
 {
+    "version": "2.0.0",
     "tasks": [
         {
-            "type": "cppbuild",
-            "label": "C/C++: gcc.exe アクティブなファイルのビルド",
-            "command": "C:\\MinGW\\bin\\gcc.exe",
+            "label": "RPG全体をビルド",
+            "type": "shell",
+            "command": "C:\\Users\\ssi\\Downloads\\ucrt64\\bin\\gcc.exe",
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",
-                "${file}",
+                "${workspaceFolder}\\*.c",
                 "-o",
-                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+                "${workspaceFolder}\\RPG.exe"
             ],
             "options": {
-                "cwd": "${fileDirname}"
+                "cwd": "${workspaceFolder}"
             },
             "problemMatcher": [
                 "$gcc"
@@ -20,9 +21,7 @@
             "group": {
                 "kind": "build",
                 "isDefault": true
-            },
-            "detail": "デバッガーによって生成されたタスク。"
+            }
         }
-    ],
-    "version": "2.0.0"
+    ]
 }
