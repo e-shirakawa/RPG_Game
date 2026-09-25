@@ -2,7 +2,10 @@
 #include<string.h>
 #include"head_rpg.h"
 
+
+//プレイヤー構造体変数の宣言（グローバル変数）
 PLAYER player; 
+
 
 int main()
 {
