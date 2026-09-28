@@ -33,12 +33,12 @@ do{
             case 2:
 
             //※移動先関数のスキル使用後の処理は未完成
-            useskill_pre(&p);
+            useskill_pre(p);
 
             case 3:
 
             //※移動先関数の処理は未完成
-            useitem_pre(&p);
+            useitem_pre(p);
 
             case 4:
 
