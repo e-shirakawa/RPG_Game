@@ -57,6 +57,7 @@ void useskill_pre(PLAYER *p)
 
                 if(command2 == 1)
                 {
+                    //スキル使用関数へ
                     useskill_use(p);
                 }
                 else if(command2 == 2)
@@ -82,15 +83,12 @@ void useskill_pre(PLAYER *p)
         }
 
     }while(command1 < 1 || command1 > 2);
-
     
 
     EXIT:
 
     return;
 }
-
-
 
 
 //=========================

@@ -6,5 +6,5 @@
 
 void monsteraction(PLAYER *p, MONSTER *m)
 {
-
+    return;
 }
