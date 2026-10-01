@@ -7,10 +7,10 @@
 /*
 ・（各？）ステージの関数から移行してくる
 ・選択肢は（攻撃/スキル/アイテム/逃げる）がある
-・この関数を通過するたびに1つの行動をする仕様になる
+・この関数を通過するたびに1つの行動（1ターン分）をする仕様になる
 */
 
-void playeraction(PLAYER *p, MONSTER *m)
+void playeraction(PLAYER *p, MONSTER *enemy)
 {
     //変数宣言
     int select = 0;
@@ -26,29 +26,37 @@ do{
         {
             case 1:
 
-            printf("%fの攻撃！", p -> name);
-            printf("%fに%dのダメージ！", m -> name, p -> power);
-            m -> hp -= p -> power;
+            printf("%sの攻撃！", p -> name);
+            printf("%sに%dのダメージ！", enemy -> name, p -> power);
+
+            enemy -> hp -= p -> power;
+            break;
 
             case 2:
 
             //※移動先関数のスキル使用後の処理は未完成
-            useskill_pre(p);
+            useskill_pre(p, enemy);
+
+            //戻る（キャンセル）を選択した場合、行動選択をやり直す処理が必要？
+            break;
 
             case 3:
 
             //※移動先関数の処理は未完成
             useitem_pre(p);
+            break;
 
             case 4:
 
             //逃げる処理関数を作成して呼び出す
+            break;
 
             default:
 
             printf("1～4の番号を選択してください");
 
             //選択肢にない番号を選択 → もう一度選択する処理
+
         }
 
     }while(select >= 1 && select <= 4);

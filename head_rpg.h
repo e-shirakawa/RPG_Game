@@ -125,8 +125,8 @@ void monsterset(MONSTER monsters[]);
 void skilldisplay(PLAYER *p);
 void preuseskill_pre(PLAYER *p);
 void preuseskill_use(PLAYER *p);
-void useskill_pre(PLAYER *p);
-void useskill_use(PLAYER *p);
+void useskill_pre(PLAYER *p, MONSTER *enemy);
+void useskill_use(PLAYER *p, MONSTER *enemy);
 
 
 //アイテム系

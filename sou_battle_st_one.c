@@ -12,54 +12,58 @@ void st_one(PLAYER *p, MONSTER monsters[])
     int random;         //乱数格納変数
     int wincount;       //勝利回数
 
+
     //モンスターのポインタ変数の宣言
-    MONSTER *m;
+    MONSTER enemy;
+
 
     //変数の初期化
     random = 0;
     wincount = 0;
-    m = NULL;
+
 
     //乱数生成
     srand((unsigned int)time(NULL));
 
     random = rand() % 4;       //0～3の乱数を生成
 
+
     //生成したモンスターのアドレスをポインタに格納
-    m = &monsters[random];
+    enemy = monsters[random];
+
 
     //=====================
     //戦闘処理
     //=====================
     do
     {
-        printf("%sがあらわれた!!\n\n", m -> name);
+        printf("%sがあらわれた!!\n\n", enemy.name);
 
-        while(p -> hp > 0 && m -> hp >0)
+        while(p -> hp > 0 && enemy.hp >0)
         {
 
             //プレイヤーの素早さ >= モンスターの素早さ
-            if(p -> speed >= m -> speed)
+            if(p -> speed >= enemy.speed)
             {   
 
                 //プレイヤーの行動選択
-                playeraction(p, m);
+                playeraction(p, &enemy);
 
                 //モンスターのHPが0以下になったとき
-                if(m -> hp < 0)
+                if(enemy.hp < 0)
                 {
                     break;
                 }
 
                 //モンスターの行動
-                monsteraction(p, m);
+                monsteraction(p, &enemy);
             }
 
             //モンスターの素早さ > プレイヤーの素早さ
             else
             {
                 //モンスターの行動
-                monsteraction(p, m);
+                monsteraction(p, &enemy);
 
                 //プレイヤーのHPが0以下になったとき
                 if(p -> hp < 0)
@@ -68,11 +72,10 @@ void st_one(PLAYER *p, MONSTER monsters[])
                 }
 
                 //プレイヤーの行動選択
-                playeraction(p, m);
+                playeraction(p, &enemy);
             }
         }
         
-
 
     }while(wincount > 5);
 

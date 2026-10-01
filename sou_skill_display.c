@@ -5,6 +5,7 @@
 
 void skilldisplay(PLAYER *p)
 {
+    
 //変数宣言
 int i;      //ループカウント用変数
 
