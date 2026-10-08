@@ -24,6 +24,7 @@ do{
 
         switch(select)
         {
+            //1.通常攻撃
             case 1:
 
             printf("%sの攻撃！", p -> name);
@@ -32,6 +33,8 @@ do{
             enemy -> hp -= p -> power;
             break;
 
+
+            //2.スキル使用
             case 2:
 
             //※移動先関数のスキル使用後の処理は未完成
@@ -40,12 +43,16 @@ do{
             //戻る（キャンセル）を選択した場合、行動選択をやり直す処理が必要？
             break;
 
+
+            //3.アイテム使用
             case 3:
 
             //※移動先関数の処理は未完成
             useitem_pre(p);
             break;
 
+
+            //4.逃げる
             case 4:
 
             //逃げる処理関数を作成して呼び出す
@@ -60,4 +67,7 @@ do{
         }
 
     }while(select >= 1 && select <= 4);
+
+    return;
+    
 }

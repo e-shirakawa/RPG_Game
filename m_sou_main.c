@@ -9,7 +9,6 @@ PLAYER player;
 
 int main()
 {
-
     //変数宣言
     MONSTER monsters [100];                    //モンスター構造体変数
 

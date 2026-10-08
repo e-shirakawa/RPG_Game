@@ -2,6 +2,8 @@
 #include<string.h>
 #include"head_rpg.h"
 
+//プレイヤーの習得しているスキルの一覧が表示される
+//スキルごとの番号が表示されるため、その番号を選択するとそのスキルが使用できる実装？
 
 void skilldisplay(PLAYER *p)
 {
