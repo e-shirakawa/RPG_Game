@@ -76,12 +76,13 @@ typedef struct
 typedef struct
 {
     char name [20];                 //名前
-    int hp;                         //HP                          
+    int hp;                         //HP
+    int maxHp;                      //最大HP                          
     int power;                      //攻撃力
     int speed;                      //素早さ
     double physicaldefence;         //物理防御力
     double magicaldiffence;         //魔法防御力
-    SKILL monsterskill [10];        //所持スキル
+    SKILL monsterskill [5];        //所持スキル
     int gainexp;                    //撃破時の獲得経験値
 }MONSTER;
 
@@ -108,7 +109,9 @@ void prebattle(PLAYER *p);
 
 //行動選択
 void playeraction(PLAYER *p, MONSTER monsters[]);
-void monsteraction(PLAYER *p, MONSTER monsters[]);
+void monsteraction(PLAYER *p, MONSTER *enemy);
+void atackselect(PLAYER *p, MONSTER *enemy, int *skillno);
+void useskill(PLAYER *p, MONSTER *enemy, int *skillno);
 
 
 //戦闘ステージ
@@ -125,7 +128,7 @@ void monsterset(MONSTER monsters[]);
 void skilldisplay(PLAYER *p);
 void preuseskill_pre(PLAYER *p);
 void preuseskill_use(PLAYER *p);
-void useskill_pre(PLAYER *p, MONSTER *enemy);
+void useskill_pre(PLAYER *p, MONSTER *enemy, int *turn);
 void useskill_use(PLAYER *p, MONSTER *enemy);
 
 

@@ -24,7 +24,7 @@
 //スキル使用前段階の関数
 //=========================
 
-void useskill_pre(PLAYER *p, MONSTER *enemy)
+void useskill_pre(PLAYER *p, MONSTER *enemy, int *turn)
 {
     //変数の宣言
     int command1;        //選択コマンド1
@@ -62,6 +62,8 @@ void useskill_pre(PLAYER *p, MONSTER *enemy)
                 }
                 else if(command2 == 2)
                 {
+                    *turn = 1;
+
                     goto EXIT;
                 }
                 else
@@ -75,6 +77,8 @@ void useskill_pre(PLAYER *p, MONSTER *enemy)
         }
         else if(command1 == 2)
         {
+            *turn = 1;
+
             goto EXIT;
         }
         else
@@ -105,12 +109,12 @@ void useskill_use(PLAYER *p, MONSTER *enemy)
     skillselect = 0;
     hpFlag = 0;
 
-
-    printf("使用するスキルを選択してください\n\n");
-
     do
     {
         hpFlag = 0;
+
+         printf("使用するスキルを選択してください\n\n");
+
         scanf("%d", &skillselect);
 
         if(p -> playerskill[skillselect - 1].type == 1)
@@ -122,7 +126,7 @@ void useskill_use(PLAYER *p, MONSTER *enemy)
             printf("%sは%sを発動した\n\n", p -> name, p -> playerskill[skillselect - 1].name);
 
             //ダメージ処理
-            printf("%sに%dのダメージ", enemy -> name, p -> playerskill[skillselect -1].powerpoint);
+            printf("%sに%dのダメージ\n", enemy -> name, p -> playerskill[skillselect -1].powerpoint);
 
             enemy -> hp -= p -> playerskill[skillselect -1].powerpoint;
 
@@ -136,7 +140,7 @@ void useskill_use(PLAYER *p, MONSTER *enemy)
             printf("%sは%sを発動した\n\n", p -> name, p -> playerskill[skillselect - 1].name);
 
             //ダメージ処理
-            printf("%sに%dのダメージ", enemy -> name, p -> playerskill[skillselect -1].powerpoint);
+            printf("%sに%dのダメージ\n", enemy -> name, p -> playerskill[skillselect -1].powerpoint);
 
             enemy -> hp -= p -> playerskill[skillselect -1].powerpoint;
 
@@ -152,14 +156,14 @@ void useskill_use(PLAYER *p, MONSTER *enemy)
                 printf("%sは%sを発動した\n\n", p -> name, p -> playerskill[skillselect - 1].name);
 
                 //ダメージ処理
-                printf("%sはHPを%d回復した", enemy -> name, p -> playerskill[skillselect -1].powerpoint);
+                printf("%sはHPを%d回復した\n", enemy -> name, p -> playerskill[skillselect -1].powerpoint);
 
                 p -> hp += p -> playerskill[skillselect -1].powerpoint;
             }
 
             if(p -> hp >= p -> maxHp){
                 
-                printf("これ以上回復できません");
+                printf("これ以上回復できません\n");
 
                 hpFlag = 1;
             }

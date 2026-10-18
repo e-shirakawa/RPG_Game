@@ -13,9 +13,14 @@
 void playeraction(PLAYER *p, MONSTER *enemy)
 {
     //変数宣言
-    int select = 0;
+    int select;
+    int turn;
+
+    select = 0;
 
 do{
+
+        turn = 0;
 
         printf("行動を選択してください\n");
         printf("1:攻撃 2:スキル 3:アイテム 4:逃げる\n");
@@ -28,7 +33,7 @@ do{
             case 1:
 
             printf("%sの攻撃！", p -> name);
-            printf("%sに%dのダメージ！", enemy -> name, p -> power);
+            printf("%sに%dのダメージ！\n", enemy -> name, p -> power);
 
             enemy -> hp -= p -> power;
             break;
@@ -38,7 +43,7 @@ do{
             case 2:
 
             //※移動先関数のスキル使用後の処理は未完成
-            useskill_pre(p, enemy);
+            useskill_pre(p, enemy, &turn);
 
             //戻る（キャンセル）を選択した場合、行動選択をやり直す処理が必要？
             break;
@@ -55,7 +60,9 @@ do{
             //4.逃げる
             case 4:
 
-            //逃げる処理関数を作成して呼び出す
+            //逃げる処理
+            //escape();
+
             break;
 
             default:
@@ -66,7 +73,7 @@ do{
 
         }
 
-    }while(select >= 1 && select <= 4);
+    }while(select < 1 || select > 4 || turn == 1);
 
     return;
     

@@ -32,10 +32,10 @@ void parameterset(PLAYER *p)
 
         //基礎パラメーター
         strcpy(p -> name, "プリズム");
-        //p -> hp = 600;
-        p -> hp = 1;            //テスト用
-        //p -> mp = 180;
-        p -> mp = 1;            //テスト用
+        p -> hp = 600;
+        //p -> hp = 1;            //テスト用
+        p -> mp = 180;
+        //p -> mp = 1;            //テスト用
         p -> power = 37;
         p -> speed = 34;
         p -> physicaldefence = 0.865;

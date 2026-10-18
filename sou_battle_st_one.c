@@ -12,7 +12,7 @@ void st_one(PLAYER *p, MONSTER monsters[])
     int wincount;       //勝利回数
 
 
-    //モンスターのポインタ変数の宣言
+    //モンスター変数の宣言
     MONSTER enemy;
 
 
@@ -53,6 +53,8 @@ void st_one(PLAYER *p, MONSTER monsters[])
                 //モンスターのHPが0以下になったとき
                 if(enemy.hp < 0)
                 {
+                    printf("%sを倒した！\n", enemy.name);
+
                     break;
                 }
 
@@ -87,7 +89,7 @@ void st_one(PLAYER *p, MONSTER monsters[])
             return;
         }
 
-    }while(wincount > 5);
+    }while(wincount <= 5);
 
     return;
 }

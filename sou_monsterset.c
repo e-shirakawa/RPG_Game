@@ -13,20 +13,23 @@ void monsterset(MONSTER monsters[])
     //モンスター1
     strcpy(monsters[0].name, "スライム");
     monsters[0].hp = 146;
+    monsters[0].maxHp = 146;
     monsters[0].power = 6;
     monsters[0].speed = 3;
     monsters[0].physicaldefence = 0.988;
     monsters[0].magicaldiffence = 0.992;
     monsters[0].gainexp = 6;
 
-    //スキル（初期段階では、必要MP、スキルタイプはなしとする）
+    //スキル（初期段階では、必要MPはなしとする）
     strcpy(monsters[0].monsterskill[0].name, "粘膜");
     monsters[0].monsterskill[0].powerpoint = 9;
+    monsters[0].monsterskill[0].type = 1;
 
 
     //モンスター2
     strcpy(monsters[1].name, "グラス");
     monsters[1].hp = 116;
+    monsters[1].maxHp = 116;
     monsters[1].power = 4;
     monsters[1].speed = 5;
     monsters[1].physicaldefence = 0.990;
@@ -36,11 +39,13 @@ void monsterset(MONSTER monsters[])
     //スキル
     strcpy(monsters[1].monsterskill[0].name, "リーフカッター");
     monsters[1].monsterskill[0].powerpoint = 11;
+    monsters[1].monsterskill[0].type = 1;
 
 
     //モンスター3
     strcpy(monsters[2].name, "クリルモ");
     monsters[2].hp = 182;
+    monsters[2].maxHp = 182;
     monsters[2].power = 3;
     monsters[2].speed = 9;
     monsters[2].physicaldefence = 0.987;
@@ -50,11 +55,13 @@ void monsterset(MONSTER monsters[])
     //スキル
     strcpy(monsters[2].monsterskill[0].name, "リコルフィン");
     monsters[2].monsterskill[0].powerpoint = 10;
+    monsters[2].monsterskill[0].type = 1;
 
 
     //モンスター4
     strcpy(monsters[3].name, "アーピト");
     monsters[3].hp = 205;
+    monsters[3].maxHp = 205;
     monsters[3].power = 7;
     monsters[3].speed = 6;
     monsters[3].physicaldefence = 0.974;
@@ -64,6 +71,7 @@ void monsterset(MONSTER monsters[])
     //スキル
     strcpy(monsters[3].monsterskill[0].name, "インハーゾ");
     monsters[3].monsterskill[0].powerpoint = 13;
+    monsters[3].monsterskill[0].type = 1;
 
 
 //======================
