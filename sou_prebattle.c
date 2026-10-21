@@ -22,7 +22,7 @@ void prebattle(PLAYER *p)
     while(tobattle != 1)
     {
         printf("～～行動選択～～\n");
-        printf("▶1：スキル・アイテム使用 ▶2：セーブ ▶3：戦闘に進む");
+        printf("▶1：スキル・アイテム使用 ▶2：セーブ ▶3：戦闘に進む\n");
 
         //コマンド選択 + 入力チェック
         do{
@@ -30,7 +30,7 @@ void prebattle(PLAYER *p)
 
             if(select < 1 || select > 3)
             {
-                printf("1～3を選択してください");
+                printf("1～3を選択してください\n");
             }
         }while(select < 1 || select > 3);
 
@@ -40,7 +40,7 @@ void prebattle(PLAYER *p)
             case 1:     //スキル・アイテム使用
 
 
-                    printf("▶1：スキル使用 ▶2：アイテム使用");
+                    printf("▶1：スキル使用 ▶2：アイテム使用\n");
             
                     //useselectの選択と入力チェック
                     do{
@@ -49,7 +49,7 @@ void prebattle(PLAYER *p)
 
                         if(useselect < 1 || useselect > 2)
                         {
-                            printf("1か2を選択してください");
+                            printf("1か2を選択してください\n");
                         }
 
                     }while(useselect < 1 || useselect > 2);       

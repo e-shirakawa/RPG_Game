@@ -32,8 +32,8 @@ do{
             //1.通常攻撃
             case 1:
 
-            printf("%sの攻撃！", p -> name);
-            printf("%sに%dのダメージ！\n", enemy -> name, p -> power);
+            printf("%sの攻撃！\n", p -> name);
+            printf("%sに%dのダメージ！\n\n", enemy -> name, p -> power);
 
             enemy -> hp -= p -> power;
             break;

@@ -35,8 +35,8 @@ void preuseskill_pre(PLAYER *p)
     printf("\n");
 
     //スキル一覧を表示
-    printf("[スキルを使用しますか]\n");
-    printf("▶1.スキルを使用する ▶2.もどる\n\n");
+    printf("スキルを使用しますか\n");
+    printf("▶1.スキルを使用する ▶2.もどる\n");
 
     do{
 
@@ -63,7 +63,7 @@ void preuseskill_pre(PLAYER *p)
                 }
                 else
                 {
-                    printf("1か2を選択してください");
+                    printf("1か2を選択してください\n");
                 }
 
             }while(command2 < 1 || command2 > 2);
@@ -104,7 +104,7 @@ void preuseskill_use(PLAYER *p)
     do
     {
 
-        printf("使用するスキルを選択してください\n\n");
+        printf("使用するスキルを選択してください\n");
         printf("▶使用するスキル番号を選択 ▶-1：戻る\n");
 
         //場合分けが必要？（1.物理攻撃 2.魔法攻撃 3.回復）

@@ -53,7 +53,7 @@ void st_one(PLAYER *p, MONSTER monsters[])
                 //モンスターのHPが0以下になったとき
                 if(enemy.hp < 0)
                 {
-                    printf("%sを倒した！\n", enemy.name);
+                    printf("%sを倒した！\n\n", enemy.name);
 
                     break;
                 }

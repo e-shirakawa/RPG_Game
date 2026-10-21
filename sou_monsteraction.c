@@ -81,8 +81,8 @@ void monsteraction(PLAYER *p, MONSTER *enemy)
         if(*s == 1)
         {
         
-            printf("%sの攻撃！", enemy->name);
-            printf("%sは%dのダメージを受けた\n", p->name, enemy->power);
+            printf("%sの攻撃！\n", enemy->name);
+            printf("%sは%dのダメージを受けた\n\n", p->name, enemy->power);
 
             p->hp -= enemy->power;
 
@@ -91,7 +91,7 @@ void monsteraction(PLAYER *p, MONSTER *enemy)
         {
             useskill(p, enemy, s);
         }
-        
+
     return;
 }
 
@@ -102,8 +102,8 @@ void atackselect(PLAYER *p, MONSTER *enemy, int *s){
     {
         case 1:
 
-        printf("%sの攻撃！", enemy->name);
-        printf("%sは%dのダメージを受けた\n", p->name, enemy->power);
+        printf("%sの攻撃！\n", enemy->name);
+        printf("%sは%dのダメージを受けた\n\n", p->name, enemy->power);
 
         p->hp -= enemy->power;
         break;
@@ -111,35 +111,35 @@ void atackselect(PLAYER *p, MONSTER *enemy, int *s){
         case 2:
         if(enemy->monsterskill[0].powerpoint > 0)
         {
-            printf("%sは%sを発動した！！\n", enemy->name, enemy->monsterskill[0].name);
+            printf("%sは%sを発動した！！\n\n", enemy->name, enemy->monsterskill[0].name);
         }
         break;
 
         case 3:
         if(enemy->monsterskill[1].powerpoint > 0)
         {
-            printf("%sは%sを発動した！！\n", enemy->name, enemy->monsterskill[1].name);
+            printf("%sは%sを発動した！！\n\n", enemy->name, enemy->monsterskill[1].name);
         }
         break;
 
         case 4:
         if(enemy->monsterskill[2].powerpoint > 0)
         {
-            printf("%sは%sを発動した！！\n", enemy->name, enemy->monsterskill[2].name);
+            printf("%sは%sを発動した！！\n\n", enemy->name, enemy->monsterskill[2].name);
         }
         break;
 
         case 5:
         if(enemy->monsterskill[3].powerpoint > 0)
         {
-            printf("%sは%sを発動した！！\n", enemy->name, enemy->monsterskill[3].name);
+            printf("%sは%sを発動した！！\n\n", enemy->name, enemy->monsterskill[3].name);
         }
         break;
 
         case 6:
         if(enemy->monsterskill[4].powerpoint > 0)
         {
-            printf("%sは%sを発動した！！\n", enemy->name, enemy->monsterskill[4].name);
+            printf("%sは%sを発動した！！\n\n", enemy->name, enemy->monsterskill[4].name);
         }
         break;
     }
@@ -160,8 +160,8 @@ void useskill(PLAYER *p, MONSTER *enemy, int *s)
         if(enemy->monsterskill[*s - 2].type == 1)
         {
             //物理攻撃スキルの発動
-            printf("%sは%sを発動した！！", enemy->name, enemy->monsterskill[*s - 2].name);
-            printf("%sは%dのダメージを受けた！\n", p->name, enemy->monsterskill[*s - 2].powerpoint);
+            printf("%sは%sを発動した！！\n", enemy->name, enemy->monsterskill[*s - 2].name);
+            printf("%sは%dのダメージを受けた！\n\n", p->name, enemy->monsterskill[*s - 2].powerpoint);
 
             p->hp -= enemy->monsterskill[*s - 2].powerpoint;
 
@@ -169,19 +169,19 @@ void useskill(PLAYER *p, MONSTER *enemy, int *s)
         else if(enemy->monsterskill[*s - 2].type == 2)
         {
             //魔法攻撃スキルの発動
-            printf("%sは%sを発動した！！", enemy->name, enemy->monsterskill[*s - 2].name);
-            printf("%sは%dのダメージを受けた！\n", p->name, enemy->monsterskill[*s - 2].powerpoint);
+            printf("%sは%sを発動した！！\n", enemy->name, enemy->monsterskill[*s - 2].name);
+            printf("%sは%dのダメージを受けた！\n\n", p->name, enemy->monsterskill[*s - 2].powerpoint);
 
             p->hp -= enemy->monsterskill[*s - 2].powerpoint;
         }
         else if(enemy->monsterskill[*s - 2].type == 3)
         {
 
-            printf("%sは%sを発動した！！\n", enemy->name, enemy->monsterskill[*s - 2].name);
+            printf("%sは%sを発動した！！\n\n", enemy->name, enemy->monsterskill[*s - 2].name);
 
             if(enemy->hp < enemy->maxHp)
             {
-                printf("%sはHPを%d回復した！\n", enemy->name, enemy->monsterskill[*s - 2].powerpoint);
+                printf("%sはHPを%d回復した！\n\n", enemy->name, enemy->monsterskill[*s - 2].powerpoint);
                 
                 enemy->hp += enemy->monsterskill[*s - 2].powerpoint;
                 
@@ -199,8 +199,8 @@ void useskill(PLAYER *p, MONSTER *enemy, int *s)
     }
     else
     {
-        printf("%sの攻撃！", enemy->name);
-        printf("%sは%dのダメージを受けた\n", p->name, enemy->power);
+        printf("%sの攻撃！\n", enemy->name);
+        printf("%sは%dのダメージを受けた\n\n", p->name, enemy->power);
 
         p->hp -= enemy->power;
     }
